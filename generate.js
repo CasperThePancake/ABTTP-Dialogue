@@ -107,8 +107,6 @@ function generate() {
     output += "\n"
     if (document.getElementById("cutscene").checked) output += "scoreboard players set cutscene dialogue 1"
     if (!document.getElementById("cutscene").checked) output += "scoreboard players set cutscene dialogue 0"
-    if (document.getElementById("firstperson").checked) output += "scoreboard players set firstperson dialogue 1"
-    if (!document.getElementById("firstperson").checked) output += "scoreboard players set firstperson dialogue 0"
     document.getElementById("output").value = output
 }
 
