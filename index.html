@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <link rel="icon" href="https://media.tenor.com/esUU6Ui7208AAAAi/emoji-spin.gif" type="image/gif" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABTTP Dialogue</title>
+</head>
+<body>
+    <h1>ABTTP Dialogue Generator</h1>
+    <h4 style="margin:0px">Web design is my passion</h4>
+    <h2><u>Input:</u></h2>
+    <h3><u>Text input:</u></h3>
+    <textarea maxlength=40 placeholder="Line 1" id="input_text1"></textarea>
+    <textarea maxlength=40 placeholder="Line 2" id="input_text2"></textarea>
+    <textarea maxlength=40 placeholder="Line 3" id="input_text3"></textarea>
+    <h3><u>NPC selection:</u></h3>
+    <select id="input_npc">
+        <option value="0">None</option>
+        <option value="1">Link's Uncle</option>
+        <option value="2">Zelda</option>
+    </select>
+    <h3><u>Dialogue ID:</u></h3>
+    <textarea placeholder="Enter dialogue ID..." id="input_id"></textarea>
+    <p>Choice Dialogue<input type="checkbox" class="question" id="choice" onclick="choice_toggle()"></p>
+    <div id="choicedialogue">
+        <p>Amount of options <input id="options" value=3 type="number" min="2" max="3"></p>
+    </div>
+    <p>Cutscene Dialogue<input type="checkbox" class="question" id="cutscene"></p>
+    <button onclick="generate()" id="submit" title="Do you dare click this button?">Generate</button>
+    <h2><u>Output:</u></h2>
+    <textarea placeholder="Output will appear here!" id="output"></textarea>
+    <button onclick="download()" id="download" title="Click to download function file">Download</button>
+    <footer>Made by <a href="https://youtube.com/casperthepancake">Casper</a></footer>
+    <script src="generate.js"></script>
+</body>
+</html>

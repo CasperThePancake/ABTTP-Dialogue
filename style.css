@@ -1,0 +1,70 @@
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    background-image: url("https://www.textures-resource.com/resources/sheets/8/7828.png?updated=1498410959");
+    background-repeat:repeat;
+    background-position: 50%;
+}
+
+h1 {
+    margin: auto;
+}
+
+#input_text1, #input_text2, #input_text3 {
+    width:500px;
+    height:16px;
+    resize:none;
+    color:black;
+}
+
+#input_id {
+    resize:none;
+    height:16px;
+    color:black;
+}
+
+#submit {
+    margin-top:10px;
+    color:black;
+}
+
+#download {
+    transform:translateY(-40px);
+    color:black;
+}
+
+#output {
+    resize:none;
+    width:600px;
+    height:600px;
+    margin-bottom:50px;
+    color:black;
+}
+
+a {
+    color:inherit;
+}
+
+footer {
+    margin-top:-30px;
+    margin-bottom:20px;
+}
+
+* {
+    color:white;
+}
+
+option, select {
+    color:black;
+}
+
+#options {
+    color:black;
+}
