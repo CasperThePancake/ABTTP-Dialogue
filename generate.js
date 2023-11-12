@@ -65,7 +65,7 @@ function generateNormal() {
     //Length & sound
     output += "scoreboard players set length dialogue "+letterindex
     output += "\n"
-    output += "execute as @p at @s run playsound alttp.message weather @s"
+    output += "execute if score letterIndex dialogue matches 1.. as @p at @s run playsound alttp.message weather @s"
     output += "\n"
     output += "scoreboard players set choicedialogue dialogue 0"
     output += "\n"
