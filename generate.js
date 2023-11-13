@@ -96,14 +96,15 @@ function generateChoice() {
 
 function generate() {
     inputText = [document.getElementById("input_text1").value,document.getElementById("input_text2").value,document.getElementById("input_text3").value]
-    npcID = document.getElementById("input_npc").value
+    npcID = document.getElementById("npc").value
+    npcID = npcID.replaceAll("\'","\\\\'")
     dialogueID = document.getElementById("input_id").value
     //Regular dialogue
     if (!document.getElementById("choice").checked) generateNormal()
     //Choice dialogue
     if (document.getElementById("choice").checked) generateChoice()
     //Other
-    output += "scoreboard players set npc dialogue "+npcID
+    output += "data merge storage dialogue {npc:\""+npcID+"\"}"
     output += "\n"
     if (document.getElementById("cutscene").checked) output += "scoreboard players set cutscene dialogue 1"
     if (!document.getElementById("cutscene").checked) output += "scoreboard players set cutscene dialogue 0"

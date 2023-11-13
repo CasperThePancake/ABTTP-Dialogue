@@ -24,6 +24,13 @@ h1 {
     color:black;
 }
 
+#npc {
+    width:150px;
+    height:16px;
+    resize:none;
+    color:black;
+}
+
 #input_id {
     resize:none;
     height:16px;
