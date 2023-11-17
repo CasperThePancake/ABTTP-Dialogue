@@ -85,7 +85,7 @@ function generateChoice() {
         output += "\n"
     }
     if (document.getElementById("options").value == 2) {
-        output += "scoreboard players set choices dialogue 3"
+        output += "scoreboard players set choices dialogue 2"
         output += "\n"
     }
     output += "scoreboard players set choicedialogue dialogue 1"
